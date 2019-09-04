@@ -1,0 +1,61 @@
+GET http://localhost:8080/user/list
+Accept: application/json
+
+###
+POST http://localhost:8080/user/add
+Content-Type: application/json
+
+{
+  "name" : "name",
+  "account" : "12345",
+  "password" : "1234",
+  "gender" : "male",
+  "age" : "19",
+  "profile" : "1"
+}
+
+###
+DELETE http://localhost:8080/user/delete/2
+Accept: application/json
+
+###
+PUT http://localhost:8080/commentupdate/4
+Content-Type: application/json
+
+{
+  "userId" : "1",
+  "content" : "888",
+  "imgPath" : "C:\\Users\\정광민\\IdeaProjects\\web190326\\upload\\2019\\04\\04\\Capture002.png",
+  "imgName" : "Capture002.png"
+}
+
+###
+GET http://localhost:8080/post/list
+Accept: application/json
+
+###
+POST http://localhost:8080/post/add
+Content-Type: application/json
+
+{
+  "title" : "name",
+  "author" : "12345",
+  "content" : "1234",
+  "kind" : "council"
+}
+
+###
+GET http://localhost:8080/post/council/list
+Accept: application/json
+
+###
+POST http://localhost:8080/post/council/add
+Content-Type: application/json
+
+{
+  "title" : "name",
+  "author" : "12345",
+  "content" : "1234"
+}
+
+###
